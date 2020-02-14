@@ -18,8 +18,8 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
  results = {}
- nds.each do |director|
-  results[director[:name]] = gross_for_director(director) 
+ nds.each do |director_data|
+  results[director_data[:name]] = gross_for_director(director_data) 
   end
  results
 end
