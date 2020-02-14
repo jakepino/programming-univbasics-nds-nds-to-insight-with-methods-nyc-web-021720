@@ -20,9 +20,8 @@ def directors_totals(nds)
  results = {}
  nds.each do |director|
    director_data = gross_for_director(director) 
-   if !director_data.nil?
- results[director_data.keys.first] = director_data.values.first
+ #results[director_data.keys.first] = director_data.values.first
+  puts director_data
   end
- end
  results
 end
