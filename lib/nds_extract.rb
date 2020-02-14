@@ -20,8 +20,7 @@ def directors_totals(nds)
  results = {}
  nds.each do |director|
    director_data = gross_for_director(director) 
- #results[director_data.keys.first] = director_data.values.first
-  puts director_data
+ results[director_data.keys.first] = director_data.values.first
   end
  results
 end
